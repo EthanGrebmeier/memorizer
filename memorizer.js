@@ -122,7 +122,7 @@ start.onclick = function() {
             start.innerText = "Submit";
             play = false;
             start.disabled = false;
-        }, 3000);
+        }, 4500);
 
 
     } else {
