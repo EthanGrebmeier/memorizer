@@ -27,7 +27,8 @@ body{
 }
 
 .title_bar{
-    margin: -1vw 0 2vw 0;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,7 +177,7 @@ body{
 
 footer{
     font-family: "Hammersmith One", sans-serif;
-    font-size: 3vw;
+    font-size: 2vw;
     color: white;
     text-align: center;
     background: transparent;
