@@ -49,7 +49,7 @@ function log(){
 
 
 function clickHandle(x,y){
-    gameArray[x][y].clicked=false;
+    
     if (clickable){
         if (gameArray[x][y].clicked){
             gameArray[x][y].clicked = false;
