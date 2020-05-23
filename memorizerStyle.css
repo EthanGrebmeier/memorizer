@@ -5,6 +5,7 @@ body{
 .app_link_holder{
     height: 0%;
     top: 0;
+    
     display: flex;
 
 }

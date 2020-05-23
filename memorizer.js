@@ -162,6 +162,13 @@ start.onclick = function() {
         } else {
             lives -= 1;
             liveCount.innerText = lives;
+            liveCount.style.color = "red";
+            title.style.color = "red";
+            setTimeout(()=>{
+                liveCount.style.color = "white";
+                title.style.color = "white";
+            },500);
+            
         }
 
         if (lives == 0){
