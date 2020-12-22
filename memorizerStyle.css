@@ -1,5 +1,11 @@
 body{
-    background: #54fffa;
+    height: 100vh;
+    width: 100vw;
+    background: #355070;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .app_link_holder{
@@ -69,7 +75,7 @@ body{
 
     display: flex;
     justify-content: space-around;
-    font-size: 2vw;
+    font-size: 48px;
 
     margin-bottom: -2vw;
     margin-top: 1.2vw;
@@ -82,7 +88,7 @@ body{
 
 .score_bar{
     display: flex;
-    font-size: 2vw;
+    font-size: 48px;
     color: white;
     text-shadow: -.15vw .15vw #676767;
     font-family: 'Hammersmith One', sans-serif;
@@ -95,8 +101,6 @@ body{
 
     display: flex;
     justify-content: space-between;
-
-
     margin-bottom: 0vw;
 }
 
@@ -104,10 +108,10 @@ body{
 
     align-self: center;
     text-align: center;
-    width: 15vw;
-    height: 4vw;
-    margin-right: .5vw;
-    margin-left: .5vw;
+    width: 180px;
+    height: 60px;
+    margin-right: 15px;
+    margin-left: 15px;
 
     color: white;
     background-color: transparent;
@@ -116,31 +120,11 @@ body{
     cursor: pointer;
 
     font-family: 'Hammersmith One', sans-serif;
-    font-size: 3vw;
+    font-size: 36px;
 
     transition: color 300ms, border 300ms, background 300ms;
 }
 
-.info{
-    background: rgb(131, 162, 255);
-}
-
-.info:hover{
-    background: white;
-    color: rgb(131, 162, 255);
-
-}
-
-
-.start, .submit{
-    background: #43eb8a;
-
-}
-
-.start:hover, .submit:hover{
-    background: rgb(255, 255, 255);
-    color: #43eb8a;
-}
 
 .disabled{
     background: #656164;
@@ -152,25 +136,15 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    position: relative;
-    margin: 0vw 19vw 0 19vw;
+    width: 850px;
 }
 
 .square{
-    height: 5vw;
-    width: 5vw;
-    margin-right: .3vw;
-    margin-left: .3vw;
-    margin-bottom: .6vw;
-    align-self: center;
-}
-
-.square{
-    height: 5vw;
-    width: 5vw;
-    margin-right: .3vw;
-    margin-left: .3vw;
-    margin-bottom: .6vw;
+    height: 75px;
+    width: 75px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    margin-bottom: 5px;
     align-self: center;
 }
 
@@ -263,11 +237,10 @@ footer{
         justify-content: center;
         flex-wrap: wrap;
         position: relative;
-        margin: 10rem 0 0 0vw;
     }
     .square{
-        height: 9vw;
-        width: 9vw;
+        height: 30px;
+        width: 30px;
 
         margin: .5vw .3vw .5vw .3vw;
 

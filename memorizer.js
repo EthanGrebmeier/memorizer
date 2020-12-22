@@ -1,7 +1,6 @@
 
 let gameSpace = document.getElementById("game_space");
 let start = document.getElementById('start');
-let title = document.getElementById('title');
 let squareCount = document.getElementById('square_count');
 let highScore = document.getElementById('high_score');
 let liveCount = document.getElementById('live_count');
@@ -9,7 +8,7 @@ let liveCount = document.getElementById('live_count');
 let level = 1;
 
 let cols = 9;
-let rows = 4;
+let rows = 4; 
 
 let pickList = [];
 
@@ -113,7 +112,6 @@ start.onclick = function() {
     if (play){
         liveCount.innerText = lives;
         highScore.innerText = localStorage.getItem('highScore');
-        title.innerText =  `Level ${level}`;
         squareCount.innerText = selected;
         pickList = picker();
         selectedArray = [];
@@ -163,10 +161,8 @@ start.onclick = function() {
             lives -= 1;
             liveCount.innerText = lives;
             liveCount.style.color = "red";
-            title.style.color = "red";
             setTimeout(()=>{
                 liveCount.style.color = "white";
-                title.style.color = "white";
             },500);
             
         }
@@ -231,7 +227,6 @@ function removeClass(removed){
 }
 
 function levelEnd(){
-    title.innerText =  "Congratulations!";
     if (level > localStorage.getItem('highScore')){
         localStorage.setItem('highScore', level);
         highScore.innerText = localStorage.getItem('highScore')
@@ -283,7 +278,6 @@ function gameEnd(){
     clickable = false;
     start.classList.remove("submit");
     start.classList.add("disabled");
-    title.innerText = "Game Over!"
     for (let r = 0; r <= rows; r++){
         for (let c = 0; c <=cols; c++){
             if(gameArray[r][c].selected &! gameArray[r][c].clicked){
