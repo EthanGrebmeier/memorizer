@@ -26,7 +26,6 @@ body{
     font-family: 'Hammersmith One', sans-serif;
     font-size: 3vw;
     color: white;
-    text-shadow: -.2vh .2vh #676767;
     text-decoration: none;
 
     margin-top: 0vh;
@@ -59,7 +58,6 @@ body{
     color: white;
 
     font-size: 8vw;
-    text-shadow: -.3vw .3vw #676767;
     flex-shrink: 1;
 
 }
@@ -82,7 +80,6 @@ body{
 
     font-family: 'Hammersmith One', sans-serif;
     color: white;
-    text-shadow: -.15vw .15vw #676767;
 
 }
 
@@ -90,7 +87,6 @@ body{
     display: flex;
     font-size: 48px;
     color: white;
-    text-shadow: -.15vw .15vw #676767;
     font-family: 'Hammersmith One', sans-serif;
     margin-bottom: 1vw;
 
@@ -207,8 +203,7 @@ footer{
 
     .title{
         margin-top: 2rem;
-        font-size: 12vw;
-        text-shadow: -.5vw .5vw #676767;
+        font-size: 32px;
     }
 
     .square_bar{
@@ -233,16 +228,14 @@ footer{
     }
 
     .game_space{
+        margin-top: 50px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        position: relative;
     }
     .square{
-        height: 30px;
-        width: 30px;
-
-        margin: .5vw .3vw .5vw .3vw;
+        height: 75px;
+        width: 75px;
 
         align-self: center;
     }
