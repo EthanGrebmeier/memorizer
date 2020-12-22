@@ -1,0 +1,22 @@
+{
+  "name": "memorizer",
+  "version": "1.0.0",
+  "description": "A vanilla javascript matching game",
+  "main": "memorizer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthanGrebmeier/memorizer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EthanGrebmeier/memorizer/issues"
+  },
+  "homepage": "https://github.com/EthanGrebmeier/memorizer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
